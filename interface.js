@@ -15,6 +15,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Car = void 0;
 var person = {
     name: "omar",
     age: 23,
@@ -28,6 +29,12 @@ var Car = /** @class */ (function () {
         this.brand = brand;
         this.engine = engine;
     }
+    Car.prototype.setBrand = function (brand) {
+        return this.brand = brand;
+    };
+    Car.prototype.setEngine = function (engine) {
+        return this.engine = engine;
+    };
     Car.prototype.getBrand = function () {
         return this.brand;
     };
@@ -39,6 +46,7 @@ var Car = /** @class */ (function () {
     };
     return Car;
 }());
+exports.Car = Car;
 var Bmw = /** @class */ (function (_super) {
     __extends(Bmw, _super);
     function Bmw() {

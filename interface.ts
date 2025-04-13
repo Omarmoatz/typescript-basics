@@ -1,4 +1,4 @@
-export interface IPerson{
+interface IPerson{
     name:string
     age:number
 
@@ -18,13 +18,21 @@ console.log(person.display());
 
 
 
-class Car {
+export class Car {
     brand:string
     engine:string
 
     constructor(brand:string, engine:string){
         this.brand = brand
         this.engine = engine
+    }
+
+    setBrand(brand:string): string{
+        return this.brand = brand
+    }
+
+    setEngine(engine:string): string{
+        return this.engine = engine
     }
 
     getBrand():string{
